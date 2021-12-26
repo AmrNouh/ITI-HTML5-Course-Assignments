@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment02</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form id="feedback-form">
+      <h2 class="header">Register Today</h2>
+      <div>
+        <label for="userName">User Name</label>
+        <input
+          type="text"
+          name="txtName"
+          id="userName"
+          class="txtfield"
+          placeholder="User Name"
+          required
+        />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="txtEmail"
+          id="email"
+          class="txtfield"
+          placeholder="Email"
+          required
+        />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          minlength="8"
+          name="txtPassword"
+          id="password"
+          class="txtfield"
+          placeholder="Password"
+          required
+        />
+      </div>
+      <div>
+        <label for="salary">Salary</label>
+        <input
+          oninput="out.value = salary.value+'$'"
+          type="range"
+          name="txtSalary"
+          id="salary"
+          class="txtfield"
+          placeholder="Address"
+          required
+        />
+        <output id="out"></output>
+      </div>
+
+      <div>
+        <label for="age">Age</label>
+        <input
+          type="number"
+          name="txtAge"
+          min="21"
+          max="99"
+          id="age"
+          class="txtfield"
+          placeholder="Age"
+          required
+        />
+      </div>
+      <div>
+        <input type="submit" class="btn" id="btnAdd" />
+      </div>
+    </form>
+    <script src="./main.js"></script>
+  </body>
+</html>

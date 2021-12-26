@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@700&display=swap");
+
+.musicPlayer {
+  width: 50vw;
+  height: 80vh;
+  margin: auto;
+  background-color: #fcfcfc;
+  padding: 20px 50px 40px;
+  box-shadow: 1px 4px 10px 1px #aaa;
+}
+
+.musicPlayer h2 {
+  text-align: center;
+  color: #17459c;
+  font-family: "Chivo", sans-serif;
+}
+
+.musicPlayer audio{
+    width: 100%;
+}
+
+.musicPlayer-controls{
+    text-align: center;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: orangered;
+    border-radius: 5px;
+}
+
+.controlButtons{
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.musicList{
+    border: 2px solid #aaa;
+    padding:15px;
+    position: relative;
+    height: 50%;
+}
+
+/* #addTrack {
+    display: block;
+    position: static;
+    border: none;
+    background-color: green;
+    color: #fff;
+    font-weight: bold;
+    font-size:18px;
+    margin-bottom: 10px;
+} */
+
+.track{
+    position: relative;
+    padding: 5px;
+    width: 90%;
+    margin: 5px auto;
+    background-color: #b4b0b0;
+    border-radius: 5px;
+}
+
+.track:hover{
+    border: 2px solid green;
+}
+
+.track label {
+    color: #17459c;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.track input{
+    position: absolute;
+    top: .5%;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size:20px;
+    font-weight: bold;
+}

@@ -1,0 +1,42 @@
+div {
+  display: flex;
+  width: 50%;
+  height: 100px;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+  gap: 10px;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 2px solid #333;
+}
+.btn {
+  padding: 10px 30px;
+  font-size: 40px;
+  color: rgb(241, 101, 41);
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.btn:focus,.btn:hover {
+  border: none;
+  background-color: rgb(183, 222, 232);
+}
+
+button .material-icons {
+  font-size: 40px;
+  text-align: center;
+}
+
+#drawContainer {
+  width: 50%;
+  height: 500px;
+  border: 2px solid #333;
+  margin-top: 10px;
+  position: relative;
+  left: 25%;
+  border-radius: 5px;
+}

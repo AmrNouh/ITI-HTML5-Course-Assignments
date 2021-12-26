@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="musicPlayer">
+      <div>
+        <h2>Music Player</h2>
+      </div>
+      <div>
+        <audio id="track" src="./Assets/001.mp3" controls>
+          <!-- <source id="trackSource" src="./Assets/001.mp3"  type="audio/mpeg">
+        </source> -->
+        </audio>
+      </div>
+      <div class="musicPlayer-controls">
+        <input
+          class="controlButtons"
+          id="shuffle"
+          type="button"
+          value="Shuffle"
+        />
+        <input
+          class="controlButtons"
+          id="repeat"
+          type="button"
+          value="Repeat"
+        />
+        <input class="controlButtons" id="play" type="button" value="Play" />
+      </div>
+      <div class="musicList">
+        <input
+          id="addTrack"
+          class="custom-file-input"
+          type="file"
+          value="&plus;"
+          placeholder="choose a track"
+        />
+        <div class="track">
+          <label class="trackName">Track01</label>
+          <input class="delTrack" type="button" value="&#9747;" />
+        </div>
+        <div class="track">
+          <label class="trackName">Track02</label>
+          <input class="delTrack" type="button" value="&#9747;" />
+        </div>
+        <div class="track">
+          <label class="trackName">Track03</label>
+          <input class="delTrack" type="button" value="&#9747;" />
+        </div>
+        <div class="track">
+          <label class="trackName">Track04</label>
+          <input class="delTrack" type="button" value="&#9747;" />
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

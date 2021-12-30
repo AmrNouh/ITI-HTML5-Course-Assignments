@@ -48,25 +48,25 @@ canvasContainer.onmouseup = function (e) {
 };
 
 function draw(shape) {
-  var ctx = canvasContainer.getContext("2d");
-  switch (shape) {
-    case "line":
-      console.log("draw line");
-      drawLine(ctx);
-      break;
-    case "rect":
-      console.log("draw rect");
-      drawRect(ctx);
-      break;
-    case "circle":
-      console.log("draw circle");
-      drawCircle(ctx);
-      break;
-    default:
-      if (shape == "brush") {
-        console.log("using brush");
-        canvasContainer.onmousemove = function (e) {
-          if (clicked) {
+  canvasContainer.onmousemove = function (e) {
+    if (clicked) {
+      var ctx = canvasContainer.getContext("2d");
+      switch (shape) {
+        case "line":
+          console.log("draw line");
+          drawLine(ctx);
+          break;
+        case "rect":
+          console.log("draw rect");
+          drawRect(ctx);
+          break;
+        case "circle":
+          console.log("draw circle");
+          drawCircle(ctx);
+          break;
+        default:
+          if (shape == "brush") {
+            console.log("using brush");
             ctx.beginPath();
             ctx.fillStyle = fillColor.value;
             ctx.arc(
@@ -78,12 +78,8 @@ function draw(shape) {
             );
             ctx.fill();
             ctx.closePath();
-          }
-        };
-      } else if (shape == "eraser") {
-        console.log("using eraser");
-        canvasContainer.onmousemove = function (e) {
-          if (clicked) {
+          } else if (shape == "eraser") {
+            console.log("using eraser");
             ctx.clearRect(
               e.offsetX,
               e.offsetY,
@@ -91,10 +87,10 @@ function draw(shape) {
               parseInt(eraserSize.value)
             );
           }
-        };
+          break;
       }
-      break;
-  }
+    }
+  };
 }
 
 function drawLine(canvas) {

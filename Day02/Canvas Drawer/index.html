@@ -23,11 +23,11 @@
     <aside class="sideMenu">
       <div class="attributes">
         <label for="fillColor">Fill Color</label>
-        <input id="fillColor" type="color" />
+        <input id="fillColor" value="#4ad295" type="color" />
       </div>
       <div class="attributes">
         <label for="strockColor">Strock Color</label>
-        <input id="strockColor" type="color" />
+        <input id="strockColor" value="#f7b031" type="color" />
       </div>
       <div class="attributes">
         <label for="strockWidth">Strock Width</label>
@@ -35,6 +35,7 @@
           id="strockWidth"
           type="number"
           min="0"
+          value="1"
           placeholder="Strock Width"
         />
       </div>
@@ -45,6 +46,7 @@
           type="range"
           min="0"
           max="100"
+          value="10"
           placeholder="Brush Size"
         />
         <output id="bsize"></output>
@@ -56,6 +58,7 @@
           type="range"
           min="0"
           max="100"
+          value="20"
           placeholder="Eraser Size"
         />
         <output id="size"></output>
@@ -76,7 +79,7 @@
         <i class="fas fa-eraser"></i>
       </button>
     </div>
-    <canvas id="drawContainer" width="670" height="500"></canvas>
+    <canvas id="drawContainer" width="760" height="500"></canvas>
     <script src="./script.js"></script>
   </body>
 </html>
